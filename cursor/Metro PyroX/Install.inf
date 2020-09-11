@@ -1,0 +1,55 @@
+; Metro X
+; Right click on the file "Install.inf" and select "Install". Then in the Mouse control panel apply Entis cursors.
+
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur, Scheme.Txt
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+; -- Installed files
+
+[Scheme.Cur]
+pyrox_alt.ani
+pyrox_cur.ani
+pyrox_working.ani
+pyrox_busy.ani
+pyrox_unavail.ani
+pyrox_help.ani
+pyrox_hor.ani
+Install.inf
+pyrox_lnk.ani
+pyrox_move.ani
+pyrox_pencil.ani
+pyrox_presice.ani
+pyrox_dwnlft.ani
+pyrox_dwnrgt.ani
+pyrox_text.ani
+pyrox_vert.ani
+
+[Strings]
+CUR_DIR       = "Cursors\Pyro X"
+SCHEME_NAME   = "Pyro X"
+pointer       = "pyrox_cur.ani"
+help          = "pyrox_help.ani"
+work          = "pyrox_working.ani"
+busy          = "pyrox_busy.ani"
+text          = "pyrox_text.ani"
+unavailiable  = "pyrox_unavail.ani"
+vert          = "pyrox_vert.ani"
+horz          = "pyrox_hor.ani"
+dgn1          = "pyrox_dwnrgt.ani"
+dgn2          = "pyrox_dwnlft.ani"
+move          = "pyrox_move.ani"
+link          = "pyrox_lnk.ani"
+cross         = "pyrox_presice.ani"
+hand          = "pyrox_pencil.ani"
+alternate     = "pyrox_alt.ani"
